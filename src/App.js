@@ -1,9 +1,25 @@
 import React from 'react'
-import { BiHeadphone } from "react-icons/bi";
+import { Article, Brand, CTA, Navbar, Feature } from './components';
+import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from './containers';
+import './App.css'
+
+// import files section ends here 
+
 const App = () => {
     return (
-        <div>
-            <h2>GPT 3 <BiHeadphone /> </h2>
+        <div className="App">
+            <div className="gradient__bg">
+                <Navbar />
+                <Header /> 
+            </div>
+            <Brand />
+            <WhatGPT3 />
+            <Features />
+            <Possibility />
+            <CTA />
+            <Blog />
+            <Footer />
+
         </div>
     )
 }
